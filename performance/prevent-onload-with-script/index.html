@@ -9,6 +9,10 @@
     </body>
     <script type="text/javascript">
     /* Delays onload */
-    for (let i = 0; i <= 9999999; i++) {}
+    for (let i = 0; i <= 999999999; i++) {
+      if (!window.a) window.a = i;
+      window.a += i % 5 + i - 1;
+    }
+    console.log('finish')
     </script>
 </html>

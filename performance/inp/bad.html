@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INP Ruim</title>
+</head>
+<body>
+  <button>Clique aqui</button>
+
+  <script>
+    const botao = document.querySelector('button');
+    botao.addEventListener('click', () => {
+      // Simula uma tarefa pesada que bloqueia a thread principal
+      let contador = 0;
+      for (let i = 0; i < 1000000000; i++) {
+        contador++;
+      }
+      console.log('Tarefa concluída!');
+    });
+  </script>
+</body>
+</html>
